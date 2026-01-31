@@ -1,0 +1,83 @@
+/* UrbanSense Design System - Variables & Tokens */
+
+:root {
+  /* Core Palette - Dark Future */
+  --bg-app: #0a0f1c;
+  --bg-panel: rgba(20, 25, 40, 0.7);
+  --bg-panel-hover: rgba(30, 35, 55, 0.8);
+  
+  --text-primary: #e0e6ed;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Brand Accents */
+  --color-primary: #00f2ff; /* Neon Cyan */
+  --color-primary-glow: rgba(0, 242, 255, 0.3);
+  
+  --color-secondary: #7000ff; /* Electric Violet */
+  --color-accent: #2e7bff;   /* Royal Blue */
+
+  /* Semantic Colors */
+  --color-success: #00ff9d;
+  --color-warning: #ffbd2e;
+  --color-danger: #ff2e63;
+  --color-info: #0ea5e9;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Borders & Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(255, 255, 255, 0.15);
+
+  /* Effects */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-blur: blur(12px);
+  
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease-in-out;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-app);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-highlight);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

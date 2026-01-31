@@ -1,0 +1,57 @@
+@import './styles/variables.css';
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-app);
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(112, 0, 255, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 242, 255, 0.08), transparent 25%);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global Utility Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
